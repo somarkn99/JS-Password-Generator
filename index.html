@@ -7,6 +7,38 @@
     <title>JS Password Generator</title>
 </head>
 <body>
-    
+    <div class="result-container">
+        <textarea name="" id="PasswordResult" cols="30" rows="10"></textarea>
+    </div>
+    <div class="setting">
+        <div class="setting">
+            <label>Password Length</label>
+            <input type="number" id="PasswordLength" min="4" max="20" value="8">
+        </div>
+        <div class="setting">
+            <label>Include Uppercase Letters</label>
+            <input type="checkbox" id="uppercase" checked>
+        </div>
+        <div class="setting">
+            <label>Include Lowercase Letters</label>
+            <input type="checkbox" id="lowercase" checked>
+        </div>
+        <div class="setting">
+            <label>Include Numbers</label>
+            <input type="checkbox" id="numbers" checked>
+        </div>
+        <div class="setting">
+            <label>Include Symbols</label>
+            <input type="checkbox" id="symbols" checked>
+        </div>
+    </div>
+    <div class="buttouns">
+        <button class="btn btn-large" id="generateBtn">
+            <i class="fas fa-key"></i> Generate
+        </button>
+        <button class="btn" id="clipboardBtn">
+            <i class="far fa-clipboard"></i> Copy
+        </button>
+    </div>
 </body>
 </html>
