@@ -42,7 +42,7 @@ generate.addEventListener("click", () => {
 function generatePassword(lower, upper, number, symbol, length){
     let generatePassword = "";
     const typesCount = lower + upper + number + symbol;
-    const typesArr = [{lower}, {upper}, {numer}, {symbol}].filter(
+    const typesArr = [{lower}, {upper}, {number}, {symbol}].filter(
         (item) => Object.values(item)[0]
     );
     for (let i = 0; i < length; i += typesCount){
@@ -54,3 +54,13 @@ function generatePassword(lower, upper, number, symbol, length){
     const finalPassword = generatedPassword.slice(0, length);
     return finalPassword;
 }
+
+let button = document.getElementById("clipboardBtn");
+button.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.execCommand(
+        "copy",
+        false,
+        document.getElementById("PasswordResult").ariaSelected()
+    );
+});
