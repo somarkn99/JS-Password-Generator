@@ -11,8 +11,8 @@ function getRandomNumber() {
 }
 
 function getRandomSymbol() {
-    const symbol = "!@#$%^&*(){}[]=/<>,."
-    return String.fromCharCode[Math.floor(Math.random() * symbol.length)];
+    const symbols = "!@#$%^&*(){}[]=/<>,."
+    return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
 const randomFunc = {
@@ -29,7 +29,7 @@ generate.addEventListener("click", () => {
     const hasLower = document.getElementById("lowercase").checked;
     const hasNumber = document.getElementById("numbers").checked;
     const hasSymbol = document.getElementById("symbols").checked;
-    const result = document.getElementById("PasswordResult").checked;
+    const result = document.getElementById("PasswordResult");
     result.innerText = generatePassword(
         hasLower,
         hasUpper,
@@ -40,7 +40,7 @@ generate.addEventListener("click", () => {
 });
 
 function generatePassword(lower, upper, number, symbol, length){
-    let generatePassword = "";
+    let generatedPassword = "";
     const typesCount = lower + upper + number + symbol;
     const typesArr = [{lower}, {upper}, {number}, {symbol}].filter(
         (item) => Object.values(item)[0]
@@ -48,7 +48,7 @@ function generatePassword(lower, upper, number, symbol, length){
     for (let i = 0; i < length; i += typesCount){
         typesArr.forEach((type) => {
             const funcName = Object.keys(type)[0];
-            generatePassword += randomFunc[funcName]();
+            generatedPassword += randomFunc[funcName]();
         });
     }
     const finalPassword = generatedPassword.slice(0, length);
@@ -61,6 +61,6 @@ button.addEventListener("click", (e) => {
     document.execCommand(
         "copy",
         false,
-        document.getElementById("PasswordResult").ariaSelected()
+        document.getElementById("PasswordResult").select()
     );
 });
