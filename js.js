@@ -21,3 +21,20 @@ const randomFunc = {
     number: getRandomNumber,
     symbol: getRandomSymbol,
 };
+
+const generate = document.getElementById("generateBtn");
+generate.addEventListener("click", () => {
+    const length = document.getElementById("PasswordLength").value;
+    const hasUpper = document.getElementById("uppercase").checked;
+    const hasLower = document.getElementById("lowercase").checked;
+    const hasNumber = document.getElementById("numbers").checked;
+    const hasSymbol = document.getElementById("symbols").checked;
+    const result = document.getElementById("PasswordResult").checked;
+    result.innerText = generatePassword(
+        hasLower,
+        hasUpper,
+        hasNumber,
+        hasSymbol,
+        length
+    );
+});
