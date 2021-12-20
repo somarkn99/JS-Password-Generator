@@ -84,6 +84,7 @@ button.addEventListener("click", (e) => {
 ```
 Note: This is optional, you can not add it, it's up to how useful this code can be in your projects.
 
-Let's keep in touch through: </br>
+Credits
+-------
 - [Linkedin Account](https://www.somar-kesen.com/)  </br>
 - [My website](https://www.somar-kesen.com/)
