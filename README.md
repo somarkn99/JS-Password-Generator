@@ -5,5 +5,5 @@ This writing method is not the only one and you can generate the same results in
 I hope it's useful to you in your work, and I'm going to constantly improve its coordination and add new features to it.
 
 Let's keep in touch through:
-Linkedin Account: https://www.somar-kesen.com/
-My website: https://www.somar-kesen.com/
+[Linkedin Account](https://www.somar-kesen.com/)
+[My website](https://www.somar-kesen.com/)

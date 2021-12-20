@@ -24,12 +24,12 @@ margin-bottom: 35px;
 
 textarea{
     background: none;
-    border: none;
+    border: solid 3px;
+    height : 42px;
     color: var(--color);
     font-size: 20px;
     margin-top: auto;
     outline: none;
-    resize: none;
 }
 
 .buttons{
@@ -38,7 +38,7 @@ textarea{
 
 .btn{
     width: 50%;
-    border: none;
+    border: solid;
     color: var(--color);
     cursor: pointer;
     font-size: 16px;
