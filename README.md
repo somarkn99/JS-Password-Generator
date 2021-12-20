@@ -85,6 +85,5 @@ button.addEventListener("click", (e) => {
 Note: This is optional, you can not add it, it's up to how useful this code can be in your projects.
 
 Let's keep in touch through: </br>
-- [Linkedin Account](https://www.somar-kesen.com/)
- </br>
+- [Linkedin Account](https://www.somar-kesen.com/)  </br>
 - [My website](https://www.somar-kesen.com/)
